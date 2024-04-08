@@ -418,8 +418,7 @@
                 <a
                   href="#"
                   class="rounded-full border-2 border-teal-800 bg-transparent px-3.5 py-2.5 text-sm font-semibold tracking-wider text-teal-800 hover:bg-teal-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-400"
-                  >Try the better way<span aria-hidden="true" class="px-2">→</span></a
-                >
+                  >Try the better way<span aria-hidden="true" class="px-2">→</span></a>
               </div>
             </div>
           </dl>
@@ -433,7 +432,7 @@
 
       <section class="lg:pb-40">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 taos:translate-y-[50px] delay-[190ms] taos:opacity-0 duration-[404ms]" data-taos-offset="200">
-        >
+        
           <img src="img/why-image-visual.jpg" alt="Why should you use apply better" width="2432" height="1442" class="mt-16 rounded-xl bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24" />
         </div>
       </section>
@@ -559,7 +558,7 @@
 
       <!----------------------------  >>>>> BEGIN THE WEBSITE FAQ SECTION HERE >>>>>>>>>>>> -------------------------->
 
-      <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+      <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40 lg:pb-60">
         <div class="mx-auto max-w-4xl divide-y divide-white/10">
           <header class="mx-auto max-w-2xl pb-12 lg:text-center">
             <h2 class="text-base font-normal leading-7 text-[#07B87D]/65">FREQUENTLY ASKED QUESTIONS</h2>
@@ -569,7 +568,7 @@
             </p>
           </header>
 
-          <dl class="mt-10 space-y-6 divide-y divide-white/10">
+          <dl class="mt-10 space-y-6 divide-y divide-white/10 text-teal-500">
             <details class="pt-6">
               <summary class="faq-button flex w-full items-start justify-between text-left text-white" aria-expanded="false">
                 <span class="text-base font-medium leading-7">What services do you offer ?</span>
@@ -635,6 +634,51 @@
     </section>
     <!--------------------------------------------------------------------------------------------------------->
 
+
+
+    
+    <!----------------------------  >>>>> PREFOOTER CALL TO ACTION AREA >>>>>>>>>>>> -------------------------->
+    <div class="bg-transparent -mt-[24%]">
+      <div class="mx-auto max-w-7xl py-16 sm:px-6 sm:py-24 lg:px-8">
+        <div class="relative isolate overflow-hidden bg-[#75E0BC] px-6 pt-16 shadow-2xl sm:rounded-2xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+          <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0" aria-hidden="true">
+            <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
+            <defs>
+              <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                <stop stop-color="#7775D6" />
+                <stop offset="1" stop-color="#E935C1" />
+              </radialGradient>
+            </defs>
+          </svg>
+          <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-16 lg:pb-20 lg:text-left">
+            <h2 class="text-3xl font-medium tracking-tight text-[#0B291F] sm:text-4xl">Put your best foot forward</h2>
+            <p class="mt-6 text-lg leading-8 text-teal-700">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.</p>
+
+            <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+              <div class="mt-10 flex items-center gap-x-6">
+                <a
+                  href="#"
+                  class="rounded-full bg-teal-900 px-3.5 py-2.5 text-sm font-semibold tracking-wider text-teal-100 shadow-sm hover:bg-teal-800/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-200"
+                  >Speak with a coach</a
+                >
+                <a
+                  href="#"
+                  class="rounded-full border-2 border-teal-800 bg-transparent px-3.5 py-2.5 text-sm font-semibold tracking-wider text-teal-800 shadow-sm hover:bg-teal-700/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
+                  >Start free trial</a
+                >
+              </div>
+
+            </div>
+          </div>
+          <div class="relative mt-16 h-80 lg:mt-8">
+            <img class="absolute left-24 -top-10 w-[27rem] max-w-none " src="img/pre-footer-bg.png" alt="App screenshot" width="1824" height="1080">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
     <script>
       // Get all the FAQ buttons and content
       const faqButtons = document.querySelectorAll(".faq-button");
@@ -648,6 +692,7 @@
           // Toggle the state of the current FAQ
           const parentDetail = button.closest("details");
           parentDetail.classList.toggle("open");
+          button.classList.toggle('text-white')
 
           // Update the button icon
           const expandIcon = button.querySelector(".expand-icon");
@@ -657,6 +702,11 @@
         });
       });
     </script>
+    <style>
+      detail .open {
+        color: 
+      }
+    </style>
 
     <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
   </body>
