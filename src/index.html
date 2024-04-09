@@ -15,7 +15,7 @@
     <!-- ---------------------------------- header section from tailwind implementation ------------------------- -->
     <!-------------------------------------------------------------------------------------------------------------->
 
-    <header>
+    <header id="hero">
       <div class="relative isolate overflow-hidden bg-[#0B291F]">
         <svg class="absolute inset-0 -z-10 h-full w-full stroke-white/5 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
           <defs>
@@ -184,10 +184,10 @@
       <!--------------------------------------------------------------------------------------------------------->
 
       <!-------------------------------------------------------------------------------------------------->
+      <div class="mt-24"></div>
       <!---------------------------  Light Feature Grid Section for Benefit card ------------------------->
 
-      <div class="mt-24"></div>
-      <section class="mx-auto max-w-7xl pb-4 sm:px-6 sm:pb-8 lg:px-8">
+      <section class="mx-auto max-w-7xl pb-4 sm:px-6 sm:pb-8 lg:px-8" id="benefits">
         <ul class="mx-auto grid grid-cols-1 gap-x-20 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <!-- Feature Grid One -->
           <!-- <li
@@ -195,7 +195,7 @@
             data-taos-offset="101"
           > -->
           <li
-            class="taos:scale-[0.809] delay-[39ms] taos:opacity-0 max-w-2xl overflow-hidden bg-gray-300/50 pb-4 pt-12 shadow-sm ring-1 ring-gray-600/10 duration-[535ms] sm:rounded-3xl sm:pt-16"
+            class="taos:scale-[0.809] taos:opacity-0 max-w-2xl overflow-hidden bg-gray-300/50 pb-4 pt-12 shadow-sm ring-1 ring-gray-600/10 delay-[39ms] duration-[535ms] sm:rounded-3xl sm:pt-16"
             data-taos-offset="101"
           >
             <div class="mx-auto max-w-7xl px-6 lg:px-12">
@@ -222,7 +222,7 @@
 
           <!-- Feature Grid Two -->
           <li
-            class="sm:pt-16 delay-[39ms] taos:scale-[0.809] taos:opacity-0 max-w-2xl overflow-hidden bg-gray-300/50 pb-4 pt-12 shadow-sm ring-1 ring-gray-600/10 duration-[535ms] sm:rounded-3xl"
+            class="taos:scale-[0.809] taos:opacity-0 max-w-2xl overflow-hidden bg-gray-300/50 pb-4 pt-12 shadow-sm ring-1 ring-gray-600/10 delay-[39ms] duration-[535ms] sm:rounded-3xl sm:pt-16"
             data-taos-offset="101"
           >
             <div class="mx-auto max-w-7xl px-6 lg:px-12">
@@ -282,7 +282,7 @@
     <!------------------------------------------------------------------------------------------------------->
 
     <!--------------------------------------------------------------------------------------------------------->
-    <section class="bg-[#0B291F] py-24">
+    <section class="bg-[#0B291F] py-24" id="features">
       <!--  We begin this section by saying that: A better way to find achieve your career goals: or a better way to find opportunities -->
       <!-- Track all your applications in one inbox, automatically apply to roles and opportunities that you qualify for and invite your teammates to apply as a group to accelerators, contests and hackathons -->
       <div class="py-24 sm:py-32">
@@ -394,7 +394,7 @@
 
     <!--------------------------------------------------------------------------------------------------->
     <!------------------------------------ why apply better + blog section -------------------------->
-    <div class="bg-[#9AE4CC] py-24 sm:py-32">
+    <section class="bg-[#9AE4CC] py-24 sm:py-32" id="motivation">
       <!----------------------------------------------------------------------------------------------------->
       <!--------------------------- better pretext to share the apply better vision  -------------------------->
       <div class="mx-auto max-w-7xl px-6 py-4 pb-12 md:pb-16 lg:px-8">
@@ -418,7 +418,8 @@
                 <a
                   href="#"
                   class="rounded-full border-2 border-teal-800 bg-transparent px-3.5 py-2.5 text-sm font-semibold tracking-wider text-teal-800 hover:bg-teal-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-400"
-                  >Try the better way<span aria-hidden="true" class="px-2">→</span></a>
+                  >Try the better way<span aria-hidden="true" class="px-2">→</span></a
+                >
               </div>
             </div>
           </dl>
@@ -430,20 +431,22 @@
       <!-------------------------------------------------------------------------------------------------->
       <!---------------------------  Light Image box for Video playback ------------------------->
 
-      <section class="lg:pb-40">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8 taos:translate-y-[50px] delay-[190ms] taos:opacity-0 duration-[404ms]" data-taos-offset="200">
-        
+      <div class="lg:pb-40">
+        <div class="taos:translate-y-[50px] taos:opacity-0 mx-auto max-w-7xl px-6 delay-[190ms] duration-[404ms] lg:px-8" data-taos-offset="200">
           <img src="img/why-image-visual.jpg" alt="Why should you use apply better" width="2432" height="1442" class="mt-16 rounded-xl bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24" />
         </div>
-      </section>
+      </div>
 
       <!---------------------------   Light Image box for Video playback  ------------------------->
       <!------------------------------------------------------------------------------------------------------>
-    </div>
+    </section>
     <!------------------------------------ End why apply better + blog section -------------------------->
     <!------------------------------------------------------------------------------------------------------->
 
-    <section class="bg-[#05140F] py-24">
+    <!-- Footer wrapper div for effecting background color -->
+    <div class="bg-[#1C644D]">
+
+    <section class="bg-[#05140F] py-24" id="assurances">
       <!--------------------------------------------------------------------------------------------------------->
       <div class="py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -634,14 +637,17 @@
     </section>
     <!--------------------------------------------------------------------------------------------------------->
 
-
-
-    
     <!----------------------------  >>>>> PREFOOTER CALL TO ACTION AREA >>>>>>>>>>>> -------------------------->
-    <div class="bg-transparent -mt-[24%]">
-      <div class="mx-auto max-w-7xl py-16 sm:px-6 sm:py-24 lg:px-8">
+    <section id="prefooter">
+
+    <div class="-mt-[12rem] 2xl:-mt-[16rem] bg-transparent relative z-20">
+      <div class="mx-auto max-w-7xl py-16 sm:px-6 sm:pt-24 lg:px-8">
         <div class="relative isolate overflow-hidden bg-[#75E0BC] px-6 pt-16 shadow-2xl sm:rounded-2xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-          <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0" aria-hidden="true">
+          <svg
+            viewBox="0 0 1024 1024"
+            class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+            aria-hidden="true"
+          >
             <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
             <defs>
               <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
@@ -652,7 +658,9 @@
           </svg>
           <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-16 lg:pb-20 lg:text-left">
             <h2 class="text-3xl font-medium tracking-tight text-[#0B291F] sm:text-4xl">Put your best foot forward</h2>
-            <p class="mt-6 text-lg leading-8 text-teal-700">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.</p>
+            <p class="mt-6 text-lg leading-8 text-teal-700">
+              Discover the best career opportunities for you, highlight your best work, set yourself up for success and get a better chance of securing these roles.
+           </p>
 
             <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <div class="mt-10 flex items-center gap-x-6">
@@ -667,16 +675,237 @@
                   >Start free trial</a
                 >
               </div>
-
             </div>
           </div>
           <div class="relative mt-16 h-80 lg:mt-8">
-            <img class="absolute left-24 -top-10 w-[27rem] max-w-none " src="img/pre-footer-bg.png" alt="App screenshot" width="1824" height="1080">
+            <img class="absolute -top-10 left-24 w-[31rem] max-w-none" src="img/pre-footer-bg.png" alt="App screenshot" width="1824" height="1080" />
           </div>
         </div>
       </div>
     </div>
-    
+  </section>
+
+    <section id="footer">
+      <footer aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="mx-auto max-w-6xl px-6 pb-8 py-16 sm:py-24 lg:px-8 lg:py-32">
+          <div class="xl:grid xl:gap-8 ">
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8 md:col-span-4 xl:mt-0">
+              <div class="col-span-1 md:col-span-1 mt-6">
+                <div>
+                  <h3 class="text-sm font-normal leading-4 text-gray-50 uppercase">Company</h3>
+                  <ul role="list" class="mt-6 space-y-2">
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">About</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">Blog</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">Interview Question Guide</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">Affiliate Program</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">Apply Better Scholarships</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">Login</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">Signup</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-span-1 md:col-span-1 mt-6">
+                <div>
+                  <h3 class="text-sm font-normal leading-4 text-gray-50 uppercase">For</h3>
+                  <ul role="list" class="mt-6 space-y-2">
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">Employers</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">Universities</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">Career Coaches</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">Fellowships</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">Students</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">Internships</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-span-1 md:col-span-1 mt-6">
+                <div>
+                  <h3 class="text-sm font-normal leading-4 text-gray-50 uppercase">Product</h3>
+                  <ul role="list" class="mt-6 space-y-2">
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">AI Resume Builder</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">AI Cover letter Writer</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">AI Auto Apply</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">AI Internship Auto Apply</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">Talent Visa Applications</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">Scholarship Applications</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">AI Skills Generator</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm leading-4 text-gray-400 hover:text-white">AI Career Assistant</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+
+</div>
+
+<section class=" bg-[#0B291F]">
+<div class="mx-auto max-w-6xl px-6 pb-8 pt-6 lg:px-8   bg-[#0B291F]">
+
+
+            <div class="mt-16 sm:mt-20 lg:mt-24 lg:flex flex flex-col-reverse md:flex-row lg:items-start lg:justify-between">
+
+
+
+
+
+
+                  <div class="space-y-8 py-4">
+                    <img class="h-7" src="img/logo.svg" alt="Apply Better">
+                    <p class="text-2xl leading-4 text-gray-300">joy@applybetter.xyz</p>
+
+                    <address class="text-sm leading-4 text-gray-400">
+                      1289 Orange Street, <br>
+                      Neward, 190374 <br>
+                      Delaware, US - +1 780-932-1028
+                    </address>
+        
+                  </div>
+
+
+                  <div class="flex space-x-3 pt-4 ">
+                    <a href="#" class="text-teal-500 hover:text-teal-400 ">
+                      <span class="sr-only">LinkedIn</span>
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="white" fill-opacity="0.04"/>
+                        <path d="M24.25 6.25H7.75C7.35218 6.25 6.97064 6.40804 6.68934 6.68934C6.40804 6.97064 6.25 7.35218 6.25 7.75V24.25C6.25 24.6478 6.40804 25.0294 6.68934 25.3107C6.97064 25.592 7.35218 25.75 7.75 25.75H24.25C24.6478 25.75 25.0294 25.592 25.3107 25.3107C25.592 25.0294 25.75 24.6478 25.75 24.25V7.75C25.75 7.35218 25.592 6.97064 25.3107 6.68934C25.0294 6.40804 24.6478 6.25 24.25 6.25ZM24.25 24.25H7.75V7.75H24.25V24.25ZM13 14.5V20.5C13 20.6989 12.921 20.8897 12.7803 21.0303C12.6397 21.171 12.4489 21.25 12.25 21.25C12.0511 21.25 11.8603 21.171 11.7197 21.0303C11.579 20.8897 11.5 20.6989 11.5 20.5V14.5C11.5 14.3011 11.579 14.1103 11.7197 13.9697C11.8603 13.829 12.0511 13.75 12.25 13.75C12.4489 13.75 12.6397 13.829 12.7803 13.9697C12.921 14.1103 13 14.3011 13 14.5ZM21.25 17.125V20.5C21.25 20.6989 21.171 20.8897 21.0303 21.0303C20.8897 21.171 20.6989 21.25 20.5 21.25C20.3011 21.25 20.1103 21.171 19.9697 21.0303C19.829 20.8897 19.75 20.6989 19.75 20.5V17.125C19.75 16.6277 19.5525 16.1508 19.2008 15.7992C18.8492 15.4475 18.3723 15.25 17.875 15.25C17.3777 15.25 16.9008 15.4475 16.5492 15.7992C16.1975 16.1508 16 16.6277 16 17.125V20.5C16 20.6989 15.921 20.8897 15.7803 21.0303C15.6397 21.171 15.4489 21.25 15.25 21.25C15.0511 21.25 14.8603 21.171 14.7197 21.0303C14.579 20.8897 14.5 20.6989 14.5 20.5V14.5C14.5009 14.3163 14.5693 14.1393 14.692 14.0026C14.8148 13.866 14.9834 13.7791 15.166 13.7585C15.3485 13.7379 15.5323 13.7851 15.6824 13.891C15.8325 13.9969 15.9385 14.1542 15.9803 14.3331C16.4877 13.9889 17.0792 13.7895 17.6914 13.7561C18.3036 13.7228 18.9133 13.8568 19.455 14.1438C19.9968 14.4308 20.4501 14.86 20.7664 15.3852C21.0826 15.9105 21.2498 16.5119 21.25 17.125ZM13.375 11.875C13.375 12.0975 13.309 12.315 13.1854 12.5C13.0618 12.685 12.8861 12.8292 12.6805 12.9144C12.475 12.9995 12.2488 13.0218 12.0305 12.9784C11.8123 12.935 11.6118 12.8278 11.4545 12.6705C11.2972 12.5132 11.19 12.3127 11.1466 12.0945C11.1032 11.8762 11.1255 11.65 11.2106 11.4445C11.2958 11.2389 11.44 11.0632 11.625 10.9396C11.81 10.816 12.0275 10.75 12.25 10.75C12.5484 10.75 12.8345 10.8685 13.0455 11.0795C13.2565 11.2905 13.375 11.5766 13.375 11.875Z" fill="#07B87D" fill-opacity="0.64"/>
+                        </svg>
+                        
+                    </a>
+                    
+               
+                    <a href="#" class="text-teal-500 hover:text-teal-400 ">
+                      <span class="sr-only">X (Formerly Twitter)</span>
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="white" fill-opacity="0.04"/>
+                        <path d="M23.2807 22.2198C23.3504 22.2895 23.4056 22.3722 23.4433 22.4632C23.4811 22.5543 23.5005 22.6519 23.5005 22.7504C23.5005 22.849 23.4811 22.9465 23.4433 23.0376C23.4056 23.1286 23.3504 23.2114 23.2807 23.281C23.211 23.3507 23.1283 23.406 23.0372 23.4437C22.9462 23.4814 22.8486 23.5008 22.7501 23.5008C22.6515 23.5008 22.5539 23.4814 22.4629 23.4437C22.3718 23.406 22.2891 23.3507 22.2194 23.281L16.0001 17.0607L9.78068 23.281C9.63995 23.4218 9.44907 23.5008 9.25005 23.5008C9.05103 23.5008 8.86016 23.4218 8.71943 23.281C8.5787 23.1403 8.49963 22.9494 8.49963 22.7504C8.49963 22.5514 8.5787 22.3605 8.71943 22.2198L14.9397 16.0004L8.71943 9.78104C8.5787 9.64031 8.49963 9.44944 8.49963 9.25042C8.49963 9.05139 8.5787 8.86052 8.71943 8.71979C8.86016 8.57906 9.05103 8.5 9.25005 8.5C9.44907 8.5 9.63995 8.57906 9.78068 8.71979L16.0001 14.9401L22.2194 8.71979C22.3602 8.57906 22.551 8.5 22.7501 8.5C22.9491 8.5 23.1399 8.57906 23.2807 8.71979C23.4214 8.86052 23.5005 9.05139 23.5005 9.25042C23.5005 9.44944 23.4214 9.64031 23.2807 9.78104L17.0604 16.0004L23.2807 22.2198Z" fill="#07B87D" fill-opacity="0.64"/>
+                        </svg>
+                        
+                    </a>
+
+                    <a href="#" class="text-teal-500 hover:text-teal-400 ">
+                      <span class="sr-only">YouTube</span>
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="white" fill-opacity="0.04"/>
+                        <path d="M19.4163 15.3756L14.9163 12.3756C14.8033 12.3003 14.6719 12.257 14.5363 12.2504C14.4006 12.2438 14.2657 12.2742 14.146 12.3383C14.0263 12.4024 13.9262 12.4978 13.8564 12.6144C13.7867 12.7309 13.7499 12.8642 13.75 13V19C13.7499 19.1358 13.7867 19.2691 13.8564 19.3856C13.9262 19.5022 14.0263 19.5976 14.146 19.6617C14.2657 19.7258 14.4006 19.7562 14.5363 19.7496C14.6719 19.743 14.8033 19.6998 14.9163 19.6244L19.4163 16.6244C19.5191 16.5559 19.6035 16.4631 19.6618 16.3542C19.7202 16.2452 19.7507 16.1236 19.7507 16C19.7507 15.8764 19.7202 15.7548 19.6618 15.6458C19.6035 15.5369 19.5191 15.4441 19.4163 15.3756ZM15.25 17.5984V14.4063L17.6481 16L15.25 17.5984ZM25.9684 10.5175C25.8801 10.1719 25.7109 9.85224 25.4747 9.58491C25.2385 9.31758 24.9421 9.11024 24.61 8.98C21.3962 7.73875 16.2812 7.75 16 7.75C15.7188 7.75 10.6037 7.73875 7.39 8.98C7.0579 9.11024 6.76153 9.31758 6.52534 9.58491C6.28915 9.85224 6.1199 10.1719 6.03156 10.5175C5.78875 11.4531 5.5 13.1631 5.5 16C5.5 18.8369 5.78875 20.5469 6.03156 21.4825C6.11977 21.8283 6.28895 22.1481 6.52515 22.4156C6.76136 22.6831 7.0578 22.8906 7.39 23.0209C10.4688 24.2088 15.2875 24.25 15.9381 24.25H16.0619C16.7125 24.25 21.5341 24.2088 24.61 23.0209C24.9422 22.8906 25.2386 22.6831 25.4748 22.4156C25.711 22.1481 25.8802 21.8283 25.9684 21.4825C26.2113 20.545 26.5 18.8369 26.5 16C26.5 13.1631 26.2113 11.4531 25.9684 10.5175ZM24.5163 21.1113C24.4877 21.2263 24.4323 21.3329 24.3545 21.4224C24.2768 21.5118 24.179 21.5816 24.0691 21.6259C21.1019 22.7716 16.0553 22.7509 16.0066 22.7509H16C15.9494 22.7509 10.9066 22.7697 7.9375 21.6259C7.8276 21.5816 7.72977 21.5118 7.65204 21.4224C7.57431 21.3329 7.51888 21.2263 7.49031 21.1113C7.2625 20.2553 7 18.6784 7 16C7 13.3216 7.2625 11.7447 7.48375 10.8934C7.51179 10.7777 7.56697 10.6704 7.64473 10.5802C7.7225 10.4901 7.8206 10.4197 7.93094 10.375C10.7922 9.26969 15.5866 9.25 15.9794 9.25H16.0047C16.0553 9.25 21.1028 9.23313 24.0672 10.375C24.1771 10.4194 24.2749 10.4891 24.3526 10.5786C24.4304 10.6681 24.4858 10.7747 24.5144 10.8897C24.7375 11.7447 25 13.3216 25 16C25 18.6784 24.7375 20.2553 24.5163 21.1066V21.1113Z" fill="#07B87D" fill-opacity="0.64"/>
+                        </svg>
+               
+                    </a>
+              
+
+                    <a href="#" class="text-teal-500 hover:text-teal-400 ">
+                      <span class="sr-only">Instagram</span>
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="white" fill-opacity="0.04"/>
+                        <path d="M16 11.5C15.11 11.5 14.24 11.7639 13.4999 12.2584C12.7599 12.7529 12.1831 13.4557 11.8425 14.2779C11.5019 15.1002 11.4128 16.005 11.5865 16.8779C11.7601 17.7508 12.1887 18.5526 12.818 19.182C13.4474 19.8113 14.2492 20.2399 15.1221 20.4135C15.995 20.5872 16.8998 20.4981 17.7221 20.1575C18.5443 19.8169 19.2471 19.2401 19.7416 18.5001C20.2361 17.76 20.5 16.89 20.5 16C20.4988 14.8069 20.0243 13.663 19.1806 12.8194C18.337 11.9757 17.1931 11.5012 16 11.5ZM16 19C15.4067 19 14.8266 18.8241 14.3333 18.4944C13.8399 18.1648 13.4554 17.6962 13.2284 17.1481C13.0013 16.5999 12.9419 15.9967 13.0576 15.4147C13.1734 14.8328 13.4591 14.2982 13.8787 13.8787C14.2982 13.4591 14.8328 13.1734 15.4147 13.0576C15.9967 12.9419 16.5999 13.0013 17.1481 13.2284C17.6962 13.4554 18.1648 13.8399 18.4944 14.3333C18.8241 14.8266 19 15.4067 19 16C19 16.7956 18.6839 17.5587 18.1213 18.1213C17.5587 18.6839 16.7956 19 16 19ZM20.5 6.25H11.5C10.1081 6.25149 8.77358 6.80509 7.78933 7.78933C6.80509 8.77358 6.25149 10.1081 6.25 11.5V20.5C6.25149 21.8919 6.80509 23.2264 7.78933 24.2107C8.77358 25.1949 10.1081 25.7485 11.5 25.75H20.5C21.8919 25.7485 23.2264 25.1949 24.2107 24.2107C25.1949 23.2264 25.7485 21.8919 25.75 20.5V11.5C25.7485 10.1081 25.1949 8.77358 24.2107 7.78933C23.2264 6.80509 21.8919 6.25149 20.5 6.25ZM24.25 20.5C24.25 21.4946 23.8549 22.4484 23.1516 23.1516C22.4484 23.8549 21.4946 24.25 20.5 24.25H11.5C10.5054 24.25 9.55161 23.8549 8.84835 23.1516C8.14509 22.4484 7.75 21.4946 7.75 20.5V11.5C7.75 10.5054 8.14509 9.55161 8.84835 8.84835C9.55161 8.14509 10.5054 7.75 11.5 7.75H20.5C21.4946 7.75 22.4484 8.14509 23.1516 8.84835C23.8549 9.55161 24.25 10.5054 24.25 11.5V20.5ZM22 11.125C22 11.3475 21.934 11.565 21.8104 11.75C21.6868 11.935 21.5111 12.0792 21.3055 12.1644C21.1 12.2495 20.8738 12.2718 20.6555 12.2284C20.4373 12.185 20.2368 12.0778 20.0795 11.9205C19.9222 11.7632 19.815 11.5627 19.7716 11.3445C19.7282 11.1262 19.7505 10.9 19.8356 10.6945C19.9208 10.4889 20.065 10.3132 20.25 10.1896C20.435 10.066 20.6525 10 20.875 10C21.1734 10 21.4595 10.1185 21.6705 10.3295C21.8815 10.5405 22 10.8266 22 11.125Z" fill="#07B87D" fill-opacity="0.64"/>
+                        </svg>
+                        
+               
+                    </a>
+              
+
+                    <a href="#" class="text-teal-500 hover:text-teal-400 ">
+                      <span class="sr-only">TikTok</span>
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="white" fill-opacity="0.04"/>
+                        <path d="M25 10.75C23.8069 10.7488 22.663 10.2743 21.8194 9.43061C20.9757 8.58697 20.5012 7.44309 20.5 6.25C20.5 6.05109 20.421 5.86032 20.2803 5.71967C20.1397 5.57902 19.9489 5.5 19.75 5.5H16C15.8011 5.5 15.6103 5.57902 15.4697 5.71967C15.329 5.86032 15.25 6.05109 15.25 6.25V18.625C15.2498 18.9605 15.1597 19.2898 14.9889 19.5786C14.8181 19.8674 14.5729 20.1051 14.279 20.2668C13.985 20.4286 13.653 20.5085 13.3177 20.4983C12.9823 20.488 12.6559 20.388 12.3723 20.2085C12.0888 20.0291 11.8587 19.7769 11.7058 19.4782C11.553 19.1795 11.4831 18.8453 11.5035 18.5104C11.5238 18.1755 11.6336 17.8522 11.8215 17.5742C12.0094 17.2962 12.2684 17.0738 12.5716 16.93C12.6998 16.8691 12.8081 16.7731 12.884 16.6532C12.9598 16.5332 13 16.3941 13 16.2522V12.25C13 12.1404 12.9761 12.0321 12.9297 11.9327C12.8834 11.8333 12.8158 11.7453 12.7318 11.6749C12.6478 11.6045 12.5494 11.5533 12.4434 11.5251C12.3375 11.4968 12.2267 11.4921 12.1187 11.5113C8.77281 12.1075 6.25 15.1656 6.25 18.625C6.25 20.5147 7.00067 22.3269 8.33686 23.6631C9.67306 24.9993 11.4853 25.75 13.375 25.75C15.2647 25.75 17.0769 24.9993 18.4131 23.6631C19.7493 22.3269 20.5 20.5147 20.5 18.625V14.9022C21.889 15.6269 23.4333 16.0036 25 16C25.1989 16 25.3897 15.921 25.5303 15.7803C25.671 15.6397 25.75 15.4489 25.75 15.25V11.5C25.75 11.3011 25.671 11.1103 25.5303 10.9697C25.3897 10.829 25.1989 10.75 25 10.75ZM24.25 14.4662C22.7843 14.3364 21.3809 13.8133 20.1878 12.9522C20.0757 12.8716 19.9434 12.8235 19.8057 12.8132C19.668 12.8029 19.5301 12.8309 19.4072 12.894C19.2844 12.9572 19.1814 13.053 19.1095 13.1709C19.0376 13.2889 18.9997 13.4244 19 13.5625V18.625C19 20.1168 18.4074 21.5476 17.3525 22.6025C16.2976 23.6574 14.8668 24.25 13.375 24.25C11.8832 24.25 10.4524 23.6574 9.39752 22.6025C8.34263 21.5476 7.75 20.1168 7.75 18.625C7.75 16.1969 9.31 14.0191 11.5 13.225V15.8191C11.0152 16.143 10.6225 16.587 10.3604 17.1079C10.0982 17.6287 9.97545 18.2086 10.0041 18.7909C10.0327 19.3733 10.2117 19.9384 10.5237 20.431C10.8356 20.9236 11.2699 21.327 11.7841 21.6018C12.2984 21.8767 12.8751 22.0136 13.458 21.9993C14.0409 21.9849 14.6102 21.8198 15.1103 21.52C15.6104 21.2202 16.0243 20.796 16.3117 20.2886C16.599 19.7812 16.7501 19.2081 16.75 18.625V7H19.0469C19.2155 8.32101 19.818 9.54866 20.7597 10.4903C21.7013 11.432 22.929 12.0345 24.25 12.2031V14.4662Z" fill="#07B87D" fill-opacity="0.64"/>
+                        </svg>
+                        
+                    </a>
+              
+                
+
+                    <a href="#" class="text-teal-500 hover:text-teal-400 ">
+                      <span class="sr-only">Facebook</span>
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="white" fill-opacity="0.04"/>
+                        <path d="M16 6.25C14.0716 6.25 12.1866 6.82183 10.5832 7.89317C8.97982 8.96451 7.73013 10.4873 6.99218 12.2688C6.25422 14.0504 6.06114 16.0108 6.43735 17.9021C6.81355 19.7934 7.74215 21.5307 9.10571 22.8943C10.4693 24.2579 12.2066 25.1865 14.0979 25.5627C15.9892 25.9389 17.9496 25.7458 19.7312 25.0078C21.5127 24.2699 23.0355 23.0202 24.1068 21.4168C25.1782 19.8134 25.75 17.9284 25.75 16C25.7473 13.415 24.7192 10.9366 22.8913 9.10872C21.0634 7.28084 18.585 6.25273 16 6.25ZM16.75 24.2153V18.25H19C19.1989 18.25 19.3897 18.171 19.5303 18.0303C19.671 17.8897 19.75 17.6989 19.75 17.5C19.75 17.3011 19.671 17.1103 19.5303 16.9697C19.3897 16.829 19.1989 16.75 19 16.75H16.75V14.5C16.75 14.1022 16.908 13.7206 17.1893 13.4393C17.4706 13.158 17.8522 13 18.25 13H19.75C19.9489 13 20.1397 12.921 20.2803 12.7803C20.421 12.6397 20.5 12.4489 20.5 12.25C20.5 12.0511 20.421 11.8603 20.2803 11.7197C20.1397 11.579 19.9489 11.5 19.75 11.5H18.25C17.4544 11.5 16.6913 11.8161 16.1287 12.3787C15.5661 12.9413 15.25 13.7044 15.25 14.5V16.75H13C12.8011 16.75 12.6103 16.829 12.4697 16.9697C12.329 17.1103 12.25 17.3011 12.25 17.5C12.25 17.6989 12.329 17.8897 12.4697 18.0303C12.6103 18.171 12.8011 18.25 13 18.25H15.25V24.2153C13.1357 24.0223 11.1773 23.0217 9.78198 21.4215C8.38667 19.8214 7.66195 17.7449 7.75855 15.6241C7.85515 13.5032 8.76564 11.5013 10.3006 10.0346C11.8356 8.56793 13.877 7.74947 16 7.74947C18.1231 7.74947 20.1644 8.56793 21.6994 10.0346C23.2344 11.5013 24.1449 13.5032 24.2415 15.6241C24.3381 17.7449 23.6133 19.8214 22.218 21.4215C20.8227 23.0217 18.8643 24.0223 16.75 24.2153Z" fill="#07B87D" fill-opacity="0.64"/>
+                        </svg>
+                        
+                    </a>
+                    
+                  </div>
+
+ 
+            
+            </div>
+            <div class="mt-8 border-t border-white/10 pt-8 md:flex md:items-center md:justify-between">
+
+           
+                <ul role="list" class="flex text-gray-400 space-x-6 md:order-2">
+                  <li>
+                    <a href="#" class="text-sm hover:text-white">Terms of service</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm hover:text-white">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm hover:text-white">DPA</a>
+                  </li>
+                </ul>
+                <!-- <a href="#" class="text-teal-500 hover:text-teal-400 bg-gray-700/40 p-1 rounded-md">
+                  <span class="sr-only">YouTube</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" />
+                  </svg>
+                </a> -->
+
+
+              <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">&copy; 2024 Wootiv Corporation, Inc.</p>
+            </div>
+          </div>
+</section>
+
+
+
+        </div>
+      </footer>
+      
+ 
+          </section>
+
+    </div>
 
 
     <script>
@@ -692,7 +921,7 @@
           // Toggle the state of the current FAQ
           const parentDetail = button.closest("details");
           parentDetail.classList.toggle("open");
-          button.classList.toggle('text-white')
+          button.classList.toggle("text-white");
 
           // Update the button icon
           const expandIcon = button.querySelector(".expand-icon");
@@ -702,12 +931,6 @@
         });
       });
     </script>
-    <style>
-      detail .open {
-        color: 
-      }
-    </style>
-
     <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
   </body>
 </html>
