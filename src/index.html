@@ -43,7 +43,7 @@
               </a>
             </div>
             <h1 class="mt-10 text-4xl font-medium tracking-tight text-teal-200 sm:text-7xl">
-              Instantly apply to your dream <strong><i>scholarship</i></strong>
+              Instantly apply to your dream <span id="heroPitchText" class="font-bold"><i>scholarship</i></span>
             </h1>
             <p class="mt-6 text-lg font-normal leading-7 text-gray-300">
               Secure your dream scholarship, fellowship, internship, or talent visa effortlessly, and advance towards your professional goals with <b>Apply Better</b>
@@ -906,7 +906,9 @@
           </section>
 
     </div>
-
+      <!-- Load library from the CDN -->
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
 
     <script>
       // Get all the FAQ buttons and content
@@ -931,6 +933,20 @@
         });
       });
     </script>
-    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+
+     <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#heroPitchText', {
+      strings: ['<i>jobs</i> &amp; <i>internships</i>', '<br><i>scholarships</i>', '<br><i>fellowships</i>', '<br><i>accelerators</i>'],
+      typeSpeed: 80.9,
+        /**
+   * @property {boolean} loop loop strings
+   * @property {number} loopCount amount of loops
+   */
+  loop: true,
+  loopCount: Infinity,
+    });
+  </script>
+
   </body>
 </html>
