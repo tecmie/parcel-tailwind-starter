@@ -43,7 +43,7 @@
               </a>
             </div>
             <h1 class="mt-10 text-4xl font-medium tracking-tight text-teal-200 sm:text-7xl">
-              Instantly apply to your dream <br><span id="heroPitchText" class="font-bold"><i>scholarship</i></span>
+              Instantly apply to your dream <br class="hidden md:block"><span id="heroPitchText" class="font-bold"><i>scholarship</i></span>
             </h1>
             <p class="mt-6 text-lg font-normal leading-7 text-gray-300">
               Secure your dream scholarship, fellowship, internship, or talent accelerator effortlessly, and advance towards your professional goals with <b>Apply Better</b>
@@ -188,14 +188,14 @@
       <!---------------------------  Light Feature Grid Section for Benefit card ------------------------->
 
       <section class="mx-auto max-w-7xl pb-4 sm:px-6 sm:pb-8 lg:px-8" id="benefits">
-        <ul class="mx-auto grid grid-cols-1 gap-x-20 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <ul class="mx-auto grid grid-cols-1 gap-x-20 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 px-6 md:px-0">
           <!-- Feature Grid One -->
           <!-- <li
             class="taos:[transform:translate3d(0,200px,0)_scale(0.809)] taos:opacity-0 max-w-2xl overflow-hidden bg-gray-300/50 pb-4 pt-12 shadow-sm ring-1 ring-gray-600/10 delay-[19ms] duration-[535ms] sm:rounded-3xl sm:pt-16"
             data-taos-offset="101"
           > -->
           <li
-            class="taos:scale-[0.809] taos:opacity-0 max-w-2xl overflow-hidden bg-[var(--white-lime)] pb-4 pt-12 shadow-sm ring-1 ring-gray-600/10 delay-[39ms] duration-[535ms] sm:rounded-3xl sm:pt-16"
+            class="taos:scale-[0.809] taos:opacity-0 max-w-2xl overflow-hidden bg-[var(--white-lime)] pb-4 pt-12 shadow-sm ring-1 ring-gray-600/10 delay-[39ms] duration-[535ms] rounded-xl sm:rounded-3xl sm:pt-16"
             data-taos-offset="101"
           >
             <div class="mx-auto max-w-7xl px-6 lg:px-12">
@@ -222,7 +222,7 @@
 
           <!-- Feature Grid Two -->
           <li
-            class="taos:scale-[0.809] taos:opacity-0 max-w-2xl overflow-hidden bg-[var(--white-lime)] pb-4 pt-12 shadow-sm ring-1 ring-gray-600/10 delay-[39ms] duration-[535ms] sm:rounded-3xl sm:pt-16"
+            class="taos:scale-[0.809] taos:opacity-0 max-w-2xl overflow-hidden bg-[var(--white-lime)] pb-4 pt-12 shadow-sm ring-1 ring-gray-600/10 delay-[39ms] duration-[535ms] rounded-xl sm:rounded-3xl sm:pt-16"
             data-taos-offset="101"
           >
             <div class="mx-auto max-w-7xl px-6 lg:px-12">
@@ -252,9 +252,9 @@
 
       <section class="mx-auto max-w-7xl py-6 sm:px-6 sm:py-8 lg:px-8">
         <ul>
-          <li>
-            <div class="relative isolate overflow-hidden bg-[var(--white-lime)] px-6 pt-16 shadow-sm ring-1 ring-gray-700/10 sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-              <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+          <li class="px-6">
+            <div class="relative isolate overflow-hidden bg-[var(--white-lime)] px-6 pt-16 shadow-sm ring-1 ring-gray-700/10 rounded-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+              <div class="mx-auto max-w-md text-left lg:mx-0 lg:flex-auto lg:py-32">
                 <h2 class="text-3xl font-medium tracking-tight text-teal-800 sm:text-4xl">AI Assisted <br />submissions and answers</h2>
                 <p class="mt-6 text-base leading-6 text-gray-800">
                   Say farewell to writer's block with our AI Assisted Application Answers feature. Access a repository of proven responses and tailor them to your unique strengths and experiences,
@@ -299,10 +299,10 @@
 
       <!----------------------------  Dark Feature card section for Social proof ------------------------------>
       <ul>
-        <li>
+        <li class="px-6">
           <div class="mx-auto max-w-7xl py-6 sm:px-6 sm:py-8 lg:px-8">
             <div
-              class="taos:translate-y-[50px] taos:opacity-0 relative isolate overflow-hidden bg-gray-50/5 px-6 pt-16 shadow-sm ring-1 ring-gray-300/10 duration-[404ms] sm:rounded-xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
+              class="taos:translate-y-[50px] taos:opacity-0 relative isolate overflow-hidden bg-gray-50/5 px-6 pt-8 shadow-sm ring-1 ring-gray-300/10 duration-[404ms] rounded-xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
               data-taos-offset="100"
             >
               <svg
@@ -329,7 +329,7 @@
                 </div>
               </div>
               <div class="relative mt-16 h-80 motion-safe:animate-pulse lg:mt-8">
-                <img class="absolute left-0 top-0 w-[28rem] max-w-none rounded-md shadow-sm" src="img/autonomous-apply.svg" alt="App screenshot" width="1824" height="1080" />
+                <img class="absolute -left-10 md:left-10  top-6 md:top-0 w-[28rem] max-w-none rounded-md shadow-sm" src="img/autonomous-apply.svg" alt="App screenshot" width="1824" height="1080" />
               </div>
             </div>
           </div>
@@ -337,10 +337,10 @@
       </ul>
 
       <div class="mx-auto max-w-7xl py-4 sm:px-6 sm:py-8 lg:px-8">
-        <ul class="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <ul class="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 px-6 md:px-0">
           <!-- Feature Grid One -->
           <li
-            class="taos:translate-y-[50px] taos:opacity-0 max-w-2xl overflow-hidden bg-gray-50/5 pt-12 shadow-sm ring-1 ring-gray-300/10 duration-[404ms] sm:rounded-xl sm:pt-24"
+            class="taos:translate-y-[50px] taos:opacity-0 max-w-2xl overflow-hidden bg-gray-50/5 pt-8 shadow-sm ring-1 ring-gray-300/10 duration-[404ms] rounded-xl sm:pt-24"
             data-taos-offset="100"
           >
             <div class="mx-auto px-6 lg:px-8">
@@ -365,7 +365,7 @@
 
           <!-- Feature Grid Two -->
           <li
-            class="taos:translate-y-[90px] taos:opacity-0 max-w-2xl overflow-hidden bg-gray-50/5 pt-12 shadow-sm ring-1 ring-gray-300/10 duration-[404ms] sm:rounded-xl sm:pt-24"
+            class="taos:translate-y-[90px] taos:opacity-0 max-w-2xl overflow-hidden bg-gray-50/5 pt-8 shadow-sm ring-1 ring-gray-300/10 duration-[404ms] rounded-xl sm:pt-24"
             data-taos-offset="100"
           >
             <div class="mx-auto px-6 lg:px-8">
@@ -468,10 +468,10 @@
         <!----------------------------  Dark Feature card section for Social proof ------------------------------>
 
         <div class="mx-auto max-w-7xl py-4 sm:px-6 sm:py-8 lg:px-8">
-          <ul class="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <ul class="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 px-6 md:px-0">
             <!-- Feature Grid One -->
             <li
-              class="taos:translate-y-[50px] taos:opacity-0 max-w-2xl overflow-hidden bg-gray-50/5 pt-12 shadow-sm ring-1 ring-gray-300/10 duration-[404ms] sm:rounded-xl sm:pt-24"
+              class="taos:translate-y-[50px] taos:opacity-0 max-w-2xl overflow-hidden bg-gray-50/5 pt-6 shadow-sm ring-1 ring-gray-300/10 duration-[404ms] rounded-xl sm:pt-24"
               data-taos-offset="100"
             >
               <div class="mx-auto px-6 lg:px-8">
@@ -496,7 +496,7 @@
 
             <!-- Feature Grid Two -->
             <li
-              class="taos:translate-y-[90px] taos:opacity-0 max-w-2xl overflow-hidden bg-gray-50/5 pt-12 shadow-sm ring-1 ring-gray-300/10 duration-[404ms] sm:rounded-xl sm:pt-24"
+              class="taos:translate-y-[90px] taos:opacity-0 max-w-2xl overflow-hidden bg-gray-50/5 pt-6 shadow-sm ring-1 ring-gray-300/10 duration-[404ms] rounded-xl sm:pt-24"
               data-taos-offset="100"
             >
               <div class="mx-auto px-6 lg:px-8">
@@ -521,10 +521,10 @@
         </div>
 
         <ul>
-          <li>
+          <li class="px-6">
             <div class="mx-auto max-w-7xl py-6 sm:px-6 sm:py-8 lg:px-8">
               <div
-                class="taos:translate-y-[50px] taos:opacity-0 relative isolate overflow-hidden bg-gray-50/5 px-6 pt-16 shadow-sm ring-1 ring-gray-300/10 duration-[404ms] sm:rounded-xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
+                class="taos:translate-y-[50px] taos:opacity-0 relative isolate overflow-hidden bg-gray-50/5 px-6 pt-8 shadow-sm ring-1 ring-gray-300/10 duration-[404ms] rounded-xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
                 data-taos-offset="100"
               >
                 <svg
@@ -540,7 +540,7 @@
                     </radialGradient>
                   </defs>
                 </svg>
-                <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+                <div class="mx-auto max-w-md text-left md:text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
                   <h2 class="text-3xl font-normal tracking-tight text-teal-200 sm:text-4xl">Data privacy and security</h2>
                   <p class="mt-6 text-base leading-6 text-gray-100/90">
                     Your data security is paramount to us. We use advanced encryption to ensure that only you and our AI have access to your personal information. Rest assured, we handle your data
@@ -551,7 +551,11 @@
                   </div>
                 </div>
                 <div class="relative mt-16 motion-safe:animate-pulse lg:mt-8">
-                  <img class="absolute left-24 top-0 w-[21rem] max-w-none shadow-sm" src="img/compliance-badges.svg" alt="Apply better compliance" width="1824" height="1080" />
+                  <img class="absolute hidden md:block left-24 top-0 w-[21rem] max-w-none shadow-sm" src="img/compliance-badges.svg" alt="Apply better compliance" width="1824" height="1080" />
+                  
+                  <!-- We use this one for the mobile layout -->
+                  <img class="shadow-sm -mb-60 block md:hidden" src="img/compliance-badges.svg" alt="Apply better compliance" width="100%" />
+                  <!-- End the mobile render of the section -->
                   <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-teal-900 pt-[10%]"></div>
                 </div>
               </div>
@@ -677,7 +681,7 @@
                   </div>
                 </div>
               </div>
-              <div class="relative mt-16 h-80 lg:mt-8">
+              <div class="relative mt-16 h-80 lg:mt-8 md:block max-h-6 md:max-h-full">
                 <img class="absolute -top-10 left-24 w-[31rem] max-w-none" src="img/pre-footer-bg.png" alt="App screenshot" width="1824" height="1080" />
               </div>
             </div>
@@ -688,7 +692,7 @@
       <section id="footer">
         <footer aria-labelledby="footer-heading">
           <h2 id="footer-heading" class="sr-only">Footer</h2>
-          <div class="mx-auto max-w-6xl px-6 py-16 pb-8 sm:py-24 lg:px-8 lg:py-32">
+          <div class="mx-auto max-w-6xl px-6 sm:pb-24 lg:px-8 lg:pb-32 pt-0 sm:pt-12 pb-12">
             <div class="xl:grid xl:gap-8">
               <section class="grid grid-cols-1 gap-8 md:col-span-4 md:grid-cols-3 xl:mt-0">
                 <div class="col-span-1 mt-6 md:col-span-1">
