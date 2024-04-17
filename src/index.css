@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --light-lime: #cadd88;
+  --text-lime: #e1e9d6;
+  --white-lime: #f6f5f3;
+}
+
 * {
   font-family: "Fira Sans", Helvetica, sans-serif;
+}
+
+.gradient-bg {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(151, 187, 136, 0.75) 25%, rgba(225, 247, 172, .54) 60%, rgba(255, 255, 255, 0))
 }
