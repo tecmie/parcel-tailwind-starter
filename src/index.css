@@ -6,6 +6,8 @@
   --light-lime: #cadd88;
   --text-lime: #e1e9d6;
   --white-lime: #f6f5f3;
+  --footer-bg: #205B42;
+  --accent-bg: #d7f4dd;
 }
 
 * {
@@ -13,5 +15,5 @@
 }
 
 .gradient-bg {
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(151, 187, 136, 0.75) 25%, rgba(225, 247, 172, .54) 60%, rgba(255, 255, 255, 0))
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(151, 187, 136, 0.45) 25%, rgba(201, 247, 172, 0.30) 60%, rgba(255, 255, 255, 0))
 }
